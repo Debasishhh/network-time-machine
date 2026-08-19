@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Network Time Machine",
+  "version": "1.0.0",
+  "description": "Always-on network request log. See what happened in the last few minutes even if you forgot to open DevTools.",
+  "permissions": ["webRequest", "storage", "tabs", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Network Time Machine"
+  }
+}
